@@ -697,20 +697,11 @@ nav.scrolled .btn-swap:hover{background:var(--red-2)}
 .share-top p{max-width:240px;color:#949494;font-size:15px;padding-top:10px}
 .share-top p strong{color:var(--grey);font-weight:600}
 .jm{margin-top:auto;padding-top:44px;display:flex;flex-direction:column}
-.jm-row{display:grid;grid-template-columns:1fr 88px 88px;align-items:center;gap:12px;padding:11px 0;border-top:1px solid #2a2a2a;font-size:14px;color:#bdbdbd}
-.jm-head{border-top:0;padding-top:0;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#5a5a5a}
-.jm-head b{font-weight:600;text-align:center}
-.jm-head b:nth-of-type(1){color:var(--red)}
-.jm-row i{justify-self:center;display:flex;align-items:center;gap:8px;font-size:12px;font-style:normal;color:#5a5a5a;transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
-.jm-row i::before{content:"";width:18px;height:18px;flex-shrink:0;background:var(--red)}
-.jm-row i.wp::before{background:#555}
-.jm-row i.n::before{background:transparent;box-shadow:inset 0 0 0 1px #555}
+.jm-h{margin-bottom:6px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#5a5a5a}
+.jm-row{display:grid;grid-template-columns:18px 1fr auto;align-items:center;gap:14px;padding:12px 0;border-top:1px solid #2a2a2a;font-size:15px;color:#efefef}
+.jm-row b{font-size:14px;font-weight:400;color:#949494;text-align:right}
+.jm-row i{width:18px;height:18px;background:var(--red);transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
 .jm.on .jm-row i{transform:none}
-.jm-legend{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:20px;font-size:13px;color:#949494}
-.jm-legend span{display:flex;align-items:center;gap:8px}
-.jm-legend span::before{content:"";width:12px;height:12px;background:var(--red)}
-.jm-legend .wp::before{background:#555}
-.jm-legend .n::before{background:transparent;box-shadow:inset 0 0 0 1px #555}
 .share-src{font-size:12px;color:#5a5a5a;margin-top:10px}
 .feats{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--canvas)}
 .feat{position:relative;background:var(--grey);padding:28px 26px 30px;overflow:hidden;transition:background .35s}
@@ -1033,7 +1024,7 @@ footer{background:var(--ink);color:var(--grey);padding:100px 0}
   .price-partner-badge{position:static;margin:0 0 16px!important}
   .work{grid-template-columns:1fr}
   .promo__timer-unit{min-width:80px;padding:14px 18px 10px}.promo__timer-num{font-size:44px}.promo__timer-sep{font-size:40px}
-  .feats{grid-template-columns:1fr}.share{padding:28px 20px}.share-top b{font-size:80px;letter-spacing:-4px}.share-top b small{font-size:40px}.share-top{flex-direction:column}.jm-row{grid-template-columns:1fr 76px 76px;gap:8px;font-size:13px}.jm-head{font-size:11px;letter-spacing:.04em}
+  .feats{grid-template-columns:1fr}.share{padding:28px 20px}.share-top b{font-size:80px;letter-spacing:-4px}.share-top b small{font-size:40px}.share-top{flex-direction:column}.jm-row{gap:10px;font-size:14px}.jm-row b{font-size:13px}
   .channels{grid-template-columns:1fr}
   form{grid-template-columns:1fr}
   .case{margin-bottom:60px}
@@ -1365,22 +1356,21 @@ footer{background:var(--ink);color:var(--grey);padding:100px 0}
   <div class="why-grid">
     <div class="share fu">
       <div class="share-top">
-        <b><span data-count="7">7</span></b>
-        <p><strong>функций встроены в&nbsp;ядро Joomla</strong>&nbsp;— в&nbsp;WordPress для&nbsp;них ставят отдельные плагины.</p>
+        <b>0<small>&nbsp;₽</small></b>
+        <p><strong>за&nbsp;лицензию и&nbsp;подписку.</strong> Joomla бесплатна, а&nbsp;всё нужное для&nbsp;сложного сайта уже встроено в&nbsp;ядро.</p>
       </div>
-      <div class="jm" id="jm" role="img" aria-label="Встроено в ядро Joomla: мультиязычность, права доступа для групп, свои поля, согласование публикаций, двухфакторный вход, капча, метатеги. В WordPress для этого нужны плагины. История версий и автообновления есть в обеих CMS">
-        <div class="jm-row jm-head"><span></span><b>Joomla</b><b>WordPress</b></div>
-        <div class="jm-row"><span>Мультиязычность, 70+&nbsp;языков</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>Гибкие права доступа для&nbsp;групп</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>Свои поля для&nbsp;материалов, 15&nbsp;типов</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>Согласование публикаций</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>Двухфакторный вход в&nbsp;админку</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>Капча без&nbsp;сторонних сервисов</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>Метатеги страниц для&nbsp;SEO</span><i class="y"></i><i class="n"></i></div>
-        <div class="jm-row"><span>История версий и&nbsp;автообновления</span><i class="y"></i><i class="y wp"></i></div>
+      <div class="jm" id="jm" role="img" aria-label="Встроено в ядро Joomla 6: мультиязычность на 70+ языков, 15 типов своих полей, права доступа до отдельной статьи, согласование публикаций, двухфакторный вход, капча без сторонних сервисов, ЧПУ и метатеги, автоматические обновления ядра">
+        <p class="jm-h">Встроено в&nbsp;ядро Joomla&nbsp;6</p>
+        <div class="jm-row"><i></i><span>Мультиязычность</span><b>70+&nbsp;языков</b></div>
+        <div class="jm-row"><i></i><span>Свои поля для&nbsp;материалов</span><b>15&nbsp;типов</b></div>
+        <div class="jm-row"><i></i><span>Права доступа</span><b>до&nbsp;отдельной статьи</b></div>
+        <div class="jm-row"><i></i><span>Согласование публикаций</span><b>редактор → публикация</b></div>
+        <div class="jm-row"><i></i><span>Двухфакторный вход</span><b>в&nbsp;админку</b></div>
+        <div class="jm-row"><i></i><span>Капча</span><b>без&nbsp;сторонних сервисов</b></div>
+        <div class="jm-row"><i></i><span>SEO</span><b>ЧПУ и&nbsp;метатеги</b></div>
+        <div class="jm-row"><i></i><span>Обновления ядра</span><b>автоматически</b></div>
       </div>
-      <div class="jm-legend"><span class="y">встроено в&nbsp;Joomla</span><span class="wp">встроено в&nbsp;WordPress</span><span class="n">нужен плагин</span></div>
-      <p class="share-src">По&nbsp;официальной документации Joomla&nbsp;6 и&nbsp;WordPress, 2026.</p>
+      <p class="share-src">По&nbsp;официальной документации Joomla, 2026. Расширения для&nbsp;этого не&nbsp;нужны.</p>
     </div>
     <div class="feats">
       <div class="feat fu"><div class="fn">01<span class="badge">Joomla 6</span></div><h3>Свежая версия и&nbsp;автообновления</h3><p>Joomla&nbsp;6 вышла в&nbsp;октябре 2025&nbsp;года, версия 6.2&nbsp;— в&nbsp;октябре 2026. Ядро обновляется само, а&nbsp;обновления защищены от&nbsp;подмены.</p></div>
@@ -1800,10 +1790,10 @@ document.querySelectorAll("[data-count]").forEach((el) => cio.observe(el));
   new IntersectionObserver(([e]) => { if (e.isIntersecting && !playing) play(); }, { threshold: .15 }).observe(box);
 })();
 
-/* «Почему Joomla»: таблица «встроено / нужен плагин», квадратики появляются по строкам */
+/* «Почему Joomla»: список возможностей ядра, квадратики появляются по строкам */
 (() => {
   const jm = document.getElementById("jm");
-  jm.querySelectorAll(".jm-row:not(.jm-head)").forEach((row, r) => row.querySelectorAll("i").forEach((i, c) => { i.style.transitionDelay = `${(r * 90 + c * 45) / 1000}s`; }));
+  jm.querySelectorAll(".jm-row i").forEach((i, r) => { i.style.transitionDelay = `${r * 90 / 1000}s`; });
   if (reduce) { jm.classList.add("on"); return; }
   new IntersectionObserver(([e], o) => { if (e.isIntersecting) { jm.classList.add("on"); o.disconnect(); } }, { threshold: .4 }).observe(jm);
 })();
